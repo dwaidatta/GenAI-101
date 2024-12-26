@@ -25,15 +25,6 @@ The Fun Stationary Facts project is a single-page web application that generates
 2. **Open the HTML File**: Navigate to the project directory and open `index.html` in your web browser.
 3. **Generate Facts**: Click the "Generate Fact" button to see a new fun fact about stationary items.
 
-## Project Structure
-
-/project-root
-│
-├── index.html          # The main HTML file including CSS and JS
-├── icon.png            # Icon for website
-├── LICENSE             # License
-└── README.md           # ReadMe File
-
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and submit a pull request.
