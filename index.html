@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Stationary Facts</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #cfcfff, #ffcece);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #fact {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            #fact {
+                width: 100%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Fun Stationary Facts</h1>
+    <div id="fact">Click the button to generate a fact!</div>
+    <button onclick="generateFact()">Generate Fact</button>
+
+    <script>
+        const facts = [
+            "The first pencil was invented in 1564 in England, using a large deposit of graphite discovered in Borrowdale.",
+            "Ballpoint pens were invented in 1938 by László Bíró, a Hungarian-Argentinian inventor.",
+            "The world's largest paperclip is 15 feet tall and is located in Kipling, Saskatchewan, Canada.",
+            "Post-it Notes were invented by accident in 1968 by Spencer Silver, a scientist at 3M, who was trying to create a super-strong adhesive.",
+            "The first stapler was created for King Louis XV of France in the 18th century, and each staple was inscribed with the royal emblem.",
+            "The eraser was invented in 1770 by Joseph Priestley, who discovered that rubber could remove pencil marks.",
+            "The first fountain pen patent was issued in 1827 to Romanian inventor Petrache Poenaru.",
+            "Highlighters were invented in 1963 by Dr. Frank Honn, who used a special fluorescent ink.",
+            "The first mechanical pencil was patented in 1822 by Sampson Mordan and John Isaac Hawkins in Britain.",
+            "The modern paperclip was designed by Johan Vaaler, a Norwegian inventor, in 1899."
+        ];
+
+        function generateFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('fact').innerText = facts[randomIndex];
+        }
+    </script>
+</body>
+</html>
